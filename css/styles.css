@@ -13,6 +13,20 @@
     --white-color: #ffffff;
     --background-color: #2F303A;
 }
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+ul, ol {
+    list-style: none;
+    margin: 0px;
+    padding-left: 0px;
+}
+.container {
+    width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
@@ -20,7 +34,7 @@ body{
     letter-spacing: 0.03em;
 }
 /* точки спику прибрали */
-ul {list-style: none;}
+
 /* main */
 
 
