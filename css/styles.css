@@ -24,9 +24,11 @@ ul, ol {
 }
 .container {
     width: 1200px;
-    padding: 0px 15px;
-    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;  
 }
+
 body{
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
@@ -41,6 +43,10 @@ body{
 .header
 /* логотип */
 .logo {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-right: 93px;
     font-family: 'Raleway', sans-serif;
     color: #000000;
     font-weight: 700;
@@ -52,15 +58,25 @@ body{
 .part {
     color: #2196F3;
 }
-
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+.nav {
+    display: inherit;
+}
 .site-nav {
     display: flex;
 }
-.site-nav li {
-    
+.site-nav-li:not(:last-child) {
+    margin-right: 50px;
 }
 
+
 .site-nav .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--second-text-color);
     font-weight: 500;
     line-height: 1.14;
@@ -74,38 +90,51 @@ body{
 
 .contact {
     display: flex;
+    margin-left: auto;
 }
 .contact .link{
+    display: block;
     color: var(--primary-text-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .contact .link:hover,
 .contact .link:focus{
     color: var(--accent-color);
 }
-
+.contact-li:not(:last-child) {
+    margin-right: 40px;
+}
+.mb {
+    margin-bottom: 94px;
+}
 /* hiro */
 .hero{
     background-color: var(--background-color);
     letter-spacing: 0.06em;
+    text-align: center;
 }
 .hero-title {
+    padding-top: 200px;
+    padding-bottom: 30px;
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     text-transform: uppercase;
+
 }
 .hero-button{
+    margin-bottom: 200px;
+    display: inline-block;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
     align-items: center;
     text-align: center;
     color: var(--white-color);
@@ -118,6 +147,9 @@ body{
 
 
 /* sections */
+.section {
+    margin-bottom: 94px;
+}
 .section-title{
     color: var(--second-text-color);
     font-size: 36px;
@@ -125,9 +157,19 @@ body{
     text-align: center;
     margin-bottom: 50px;
 }
+
 /* privileges */
+
+.priviltges-container {
+    margin-top: 94px;
+}
+
 .privileges {
     margin: 94px auto;
+    display: flex;
+}
+.privileges-li {
+    width: calc((100%-90px)/4);
 }
 .privileges-title {
     font-size: 14px;
@@ -138,10 +180,26 @@ body{
 .privileges-text {
     color: var(--primary-text-color);
     line-height: 1.7;
-    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* work */
+
+.work {
+    display: flex;
+}
+.work-li {
+    width: calc((100%-60px)/3);
 }
 
 /* team */
+.team {
+    display: flex;
+}
+.team-li {   
+    width: calc((100%-90px)/4);
+}
+
 
 .team-title {
     color: var(--second-text-color);
@@ -167,13 +225,15 @@ body{
 }
 
 .foot-logo {
+    display: block;
+    padding-top: 60px;
+    margin-bottom: 28px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     color: var(--white-color);
     text-decoration: none;
-    margin-bottom: 28px;
 }
 .part {
     color: #2196F3;
@@ -182,6 +242,10 @@ body{
 .address {
     font-style: normal;
     text-decoration: none;
+    padding-bottom: 60px;
+}
+.address-li:not(:last-child) {
+    margin-bottom: 12px;
 }
 .address-link {
     color: var(--white-color);
@@ -205,6 +269,10 @@ body{
 
 
 /* portfolio */
+.button-ul{
+    display: flex;
+    justify-content: center
+}
 .button{
     display: inline-block;
     font-family: inherit;
@@ -217,11 +285,31 @@ body{
     cursor: pointer;
     border-radius: 4px;
     padding: 6px 22px;
+    margin-bottom: 56px;
 }
 .button:hover,
 .button:focus{
     color: var(--white-color);
     background-color: var(--accent-color);
+}
+
+.buttom-li:not(:last-child) {
+    margin-right: 8px;
+}
+
+.offers {
+    display: flex;
+    flex-wrap: wrap;
+}
+.offers-li {
+    width: calc((100% - 60px) / 3);
+    margin-bottom: 30px;
+}
+.offers-li:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+.offers-li:nth-last-child(-n+3) {
+    margin-bottom: 0px;
 }
 .offers-title{
     color: var(--second-text-color);
@@ -232,7 +320,6 @@ body{
 .offers-tipe{
     font-size: 16px;
     line-height: 1.88;
-;
 }
 
 
