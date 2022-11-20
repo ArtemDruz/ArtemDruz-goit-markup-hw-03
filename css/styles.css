@@ -44,7 +44,9 @@ padding-bottom: 94px;
 /* main */
 
 
-.header
+.header {
+    border: #ECECEC;
+}
 /* логотип */
 .logo {
     display: block;
@@ -124,7 +126,10 @@ padding-bottom: 94px;
     padding-bottom: 200px;
 
 }
-.hero-title {  
+.hero-title { 
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
     color: var(--white-color);
     font-weight: 900;
@@ -146,6 +151,7 @@ padding-bottom: 94px;
     cursor: pointer;
     border-radius: 4px;
     padding: 10px 24px;
+    border: none;
 }
 
 
@@ -185,7 +191,9 @@ padding-bottom: 94px;
 }
 
 /* work */
-
+.about {
+    padding-top: 0;
+}
 .work {
     display: flex;
 }
@@ -198,6 +206,9 @@ padding-bottom: 94px;
 /* team */
 .team {
     display: flex;
+}
+.team-bc{
+    background-color: #F5F4FA; 
 }
 .team-li {   
     width: calc((100% - 90px) / 4);
@@ -230,12 +241,12 @@ padding-bottom: 94px;
 
 .footer{
     background-color: var(--background-color);
-
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .foot-logo {
     display: block;
-    padding-top: 60px;
     margin-bottom: 28px;
     font-family: 'Raleway';
     font-weight: 700;
@@ -251,7 +262,6 @@ padding-bottom: 94px;
 .address {
     font-style: normal;
     text-decoration: none;
-    padding-bottom: 60px;
 }
 .address-li:not(:last-child) {
     margin-bottom: 12px;
@@ -280,7 +290,8 @@ padding-bottom: 94px;
 /* portfolio */
 .button-ul{
     display: flex;
-    justify-content: center
+    justify-content: center;
+    margin-bottom: 50px;
 }
 .button{
     display: inline-block;
@@ -294,7 +305,7 @@ padding-bottom: 94px;
     cursor: pointer;
     border-radius: 4px;
     padding: 6px 22px;
-    margin-bottom: 56px;
+    border: none;
 }
 .button:hover,
 .button:focus{
@@ -312,6 +323,7 @@ padding-bottom: 94px;
 }
 .offers-li {
     width: calc((100% - 60px) / 3);
+    margin-bottom: 30px;
 }
 
 .offers-li:not(:nth-child(3n)) {
@@ -325,12 +337,15 @@ padding-bottom: 94px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 }
 .offers-tipe{
     font-size: 16px;
     line-height: 1.88;
 }
-
+.offers-div {
+    margin: 20px 24px;
+}
 
 .visually-hidden {
     position: absolute;
