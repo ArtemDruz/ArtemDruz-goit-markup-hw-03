@@ -45,7 +45,7 @@ padding-bottom: 94px;
 
 
 .header {
-    border: #ECECEC;
+    border: 1px solid #ECECEC;
 }
 /* логотип */
 .logo {
@@ -324,6 +324,7 @@ padding-bottom: 94px;
 .offers-li {
     width: calc((100% - 60px) / 3);
     margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
 }
 
 .offers-li:not(:nth-child(3n)) {
@@ -344,7 +345,12 @@ padding-bottom: 94px;
     line-height: 1.88;
 }
 .offers-div {
-    margin: 20px 24px;
+    padding: 20px 24px;
+}
+.offers-img {
+    display: block;
+    min-width: 100%;
+    height: auto;
 }
 
 .visually-hidden {
